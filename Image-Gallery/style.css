@@ -15,9 +15,15 @@ body {
     margin:  50px auto;
 }
 .filter_buttons {
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid #839ab2;
+    padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
+    background: #e7f2fd;
 }
 button {
     padding: 10px 20px;
@@ -31,4 +37,38 @@ button {
 button.active {
     background: #4070f4;
     color: #fff;
+}
+.filter_cards {
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cards {
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.cards.hide {
+    display: none;
+}
+.cards img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.card_body {
+    padding: 15px 20px 20px;
+    color: #333;
+}
+.card_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+.card_text {
+    font-size: 18px;
 }
