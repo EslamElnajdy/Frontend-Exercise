@@ -12,8 +12,8 @@ body {
     
 }
 .log_body {
-    width: 1300px;
-    height: 700px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 50px);
     margin: 20px auto;
     background: #ffffff;
     border-radius: 54px;
@@ -23,9 +23,7 @@ body {
     overflow: hidden;
 }
 .container {
-    display: flex;
-    width: 50%;
-    
+    margin: auto;
 }
 .con_log {
     width: 370px;
@@ -118,14 +116,36 @@ button {
     padding-left: 10px;
 }
 .con_img img {
-    height: 650px;
+    height: calc(100vh - 100px);
+    width: calc(50vw);
     margin-top: 25px;
     margin-right: 25px;
 }
 
 img.vector {
+    display: none;
     position: absolute;
     bottom: 50px;
     left: -2px;
 }
+@media screen and (max-width: 500px) {
+   .log_body{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
 
+   } 
+}
+@media screen and (max-width: 1084px) {
+    
+    .log_body .con_img img{
+        display: none;
+    }
+}
+@media screen and (min-width: 1240px) {
+    
+    .log_body .vector{
+        display: block;
+    }
+}
