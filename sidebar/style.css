@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 266px;
+    height: 100vh;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid;
+
+}
+.dark {
+    background: #000;
+    color: #fff;
+}
+.log-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 33px;
+}
+.log-div h2 {
+    margin-right: 100px;
+}
+.log-div span {
+    cursor: pointer;
+}
+
+.items-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+}
+.items-div div {
+    display: flex;
+}
+.items-div div p {
+    padding-left: 16px;
+}
+.mode-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    align-items: center;
+}
+.mode-div div.btn{
+    height:25px;
+    width: 45px;
+    border-radius: 15px;
+    font-size: 40px;
+    background: #000;
+    position: relative;
+    cursor: pointer;
+}
+.dark .btn {
+    background: #5f748c !important;
+}
+.mode-div div.btn .circle{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 2px;
+    position: absolute;
+    top: 2px;
+}
+.mode-div .change {
+    left: 21px;
+}
+.mode-div div span{
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #000;
+}
+.hide {
+    display: none;
+}
+.profile-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.profile-div img {
+    border-radius: 50%;
+}
